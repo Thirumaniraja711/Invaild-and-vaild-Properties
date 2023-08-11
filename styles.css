@@ -1,0 +1,57 @@
+/* Font StyleSheet*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+input:invalid {
+    border-color: red;
+    animation: shake 0.5s infinite;
+}
+
+input:valid {
+    border-color: green;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(4px);
+    }
+}
